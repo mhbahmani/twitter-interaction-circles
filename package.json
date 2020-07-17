@@ -10,7 +10,7 @@
 		"url": "hackertyper.net"
 	},
 	"repository": {
-		"url": "https://github.com/duiker101/twitter-interaction-circles"
+		"url": "https://github.com/mhbahmani/twitter-interaction-circles"
 	},
 	"scripts": {
 		"build": "node ./src/index.js",

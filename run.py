@@ -3,9 +3,9 @@ from flask import Flask
 
 app = Flask("twiiter-interaction-circle")
 
-@app.route('/')
-def run():
-    os.system('yarn build')
+@app.route('/<username>')
+def run(username):
+    os.system('yarn build %s' % username)
     return 'Done!\n'
 
 if __name__ == '__main__':

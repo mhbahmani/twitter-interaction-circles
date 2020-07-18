@@ -11,7 +11,7 @@ You can read more about the realization of this project on the [HackerTyper Blog
 
 ## Installation
 ```shell script
-git clone git@github.com:duiker101/twitter-interaction-circle.git
+git clone git@github.com:mhbahmani/twitter-interaction-circle.git
 cd twitter-interaction-circle
 yarn install
 ```

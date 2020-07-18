@@ -43,14 +43,12 @@ CONSUMER_SECRET=BBBBBB
 
 Make sure you don't have spaces.
 
-## Modifications
+## Modifications By Me (MohammadHosein)
 
-If you wish, you can replace the first part of the main loop in the `index.js` to use the getUser() function instead of getMe().
-This will allow you to generate the circles for any public Twitter user. All the API methods used take advantage only of public data.
+I added a simple flask app and wsgi interface to communicate with nginx and all needed files to make a service of the project and deplopying it on a server. Also i added a dockerfile. Now, by sending a GET request to server_domain/<username>, server will create given username interaction circle.
 
 ## Challenges
 
 You can try to apply the following changes to test your knowledge:
 - Apply a shade to  each avatar based on the most common type of interaction
-- Fetch the circles for another user
 - Render a grid instead of the circles

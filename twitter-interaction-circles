@@ -4,6 +4,8 @@ server {
     listen 81;
     server_name public_ip local_ip;
 
+    access_log /home/myserver/Codes/twitter-interaction-circles/log/nginx-logs.log;
+
     location / {
 	include uwsgi_params;
 	uwsgi_pass unix:/home/myserver/Codes/twitter-interaction-circles/run.sock;

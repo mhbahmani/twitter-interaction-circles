@@ -1,0 +1,15 @@
+# This is systemd unit file and should be placed in /etc/systemd/system directory of server
+
+[Unit]
+Description=uwsgi instance to serve twitter interaction circle
+After=network.target
+
+[Service]
+User=myserver
+Group=www-data
+WorkingDirectory=/home/myserver/Codes/twitter-interaction-circles
+Environment="PATH=/home/myserver/Codes/twitter-interaction-circles/venv/bin"
+ExecStart=/home/myserver/Codes/twitter-interaction-circles/venv/bin/uwsgi --ini run.ini
+
+[Install]
+WantedBy=multi-user.target

@@ -2,7 +2,7 @@
 __pycache__/
 node_modules/
 .env
-yarn-error.log
+*.log
 users.txt
 *.png
 !circle.png

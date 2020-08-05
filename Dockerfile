@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM python:3.6.8-alpine
 
 WORKDIR /usr/src/app
 
